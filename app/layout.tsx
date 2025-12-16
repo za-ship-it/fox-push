@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Noto_Sans } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/header/Header";
+import { Footer } from "@/components/footer/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,9 +30,11 @@ export default function RootLayout({
         className={` ${notoSans.variable} antialiased bg-black`}
       >
         <Header />
-        <main>
+        <main className="min-h-screen flex justify-center flex-col items-center">
           {children}
         </main>
+        <Footer />
+
       </body>
     </html>
   );

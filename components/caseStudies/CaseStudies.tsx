@@ -1,24 +1,8 @@
 import Image from "next/image";
 import { Container } from "../container";
 import clsx from "clsx";
-
-const sectionData = {
-    title: "The smarter way to connect advertisers and publishers",
-    cards: [
-        {
-            heading: "For Big Brands",
-            description:
-                "Scale you campaigns, connect with millions, and drive measurable impact worldwide.",
-            backgroundImgUrl: "/images/example1.hpeg",
-        },
-        {
-            heading: "For SMEs",
-            description:
-                "Get the tools to grow your business, reach the right people, and make every ad count -without complexity.",
-            backgroundImgUrl: "/images/example1.hpeg",
-        },
-    ],
-};
+import { HeadingOne } from "../primitives/Headings";
+import { Button } from "../ui/button";
 
 const poweredSectionData = [
     {
@@ -38,11 +22,11 @@ const poweredSectionData = [
 
 export default function CaseStudies() {
     return (
-        <Container className="w-full py-6W md:py-30 overflow-hidden">
-            <h2 className="text-white w-full text-center font-semibold text-[24px] md:text-[48px] lg:text-[56px] xl:text-[64px] mb-14">
+        <Container className="w-full py-6 md:py-30 overflow-hidden">
+            <HeadingOne className="text-white w-full mb-14">
                 Connected growth,
                 <br /> powered by insight.
-            </h2>
+            </HeadingOne>
             <div className="flex justify-between gap-6">
                 {poweredSectionData.map((item, index) => (
                     <CardItem item={item} key={index} />
@@ -53,6 +37,9 @@ export default function CaseStudies() {
                     btnTwo: "Automotive",
                     cardHeading: "Driving qualified leads for a global automotive brand",
                 }} />
+            </div>
+            <div className="flex justify-center items-center mt-6 md:mt-10">
+                <Button className="bg-blue-500 h-14 text-[20px] hover:bg-blue-500 hover:text-white cursor-pointer">See all case studies</Button>
             </div>
         </Container>
     );

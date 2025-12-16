@@ -10,7 +10,7 @@ export const Header = () => {
         <Logo />
         <Navigation />
         <div className="flex justify-center items-center gap-2.5">
-            <Button variant={"outline"} className="bg-transparent h-10 text-[#FFF] font-medium text-base rounded-xl cursor-pointer">Get in touch</Button>
+            <Button variant={"outline"}>Get in touch</Button>
             <MobileNavigation />
         </div>
     </header>
