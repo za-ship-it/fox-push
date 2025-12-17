@@ -1,4 +1,5 @@
 import CaseStudies from "@/components/caseStudies/CaseStudies";
+import { HeroSection } from "@/components/heroSection/HeroSection";
 import { OurProducts } from "@/components/ourProducts/OurProducts";
 import { TwoCardsWithHeading } from "@/components/TwoCardsWithHeading/TwoCardsWithHeading";
 import Image from "next/image";
@@ -29,6 +30,7 @@ const PRODUCT_CARD_DATA = [
 export default function Home() {
   return (
     <>
+      <HeroSection />
       <TwoCardsWithHeading heading="The smarter way to connect advertisers and publishers" cards={[
         {
           heading: "For Big Brands",
