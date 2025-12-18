@@ -30,7 +30,7 @@ export default function RootLayout({
         className={` ${notoSans.variable} antialiased bg-black`}
       >
         <Header />
-        <main className="min-h-screen flex justify-center flex-col items-center">
+        <main className="min-h-screen flex  flex-col items-center">
           {children}
         </main>
         <Footer />

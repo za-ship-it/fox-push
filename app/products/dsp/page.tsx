@@ -29,7 +29,7 @@ const PRODUCT_CARD_DATA = [
   },
 ]
 
-export default function Home() {
+export default function DspProducts() {
   return (
     <>
       <HeroSection />
