@@ -85,7 +85,7 @@ export default function Home() {
         }
       ]} />
       <CaseStudies />
-      <CommonQuestions heading="Get answers to the most common questions" />
+      <CommonQuestions heading="" />
       <div className="relative w-[98%] m-auto h-9.5 md:h-19.5 lg:h-26 xl:h-32.5 2xl:h-48.75 bg-black">
         <Image
           src="/images/footer.png"
